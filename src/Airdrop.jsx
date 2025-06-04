@@ -13,6 +13,7 @@ export function Airdrop() {
   return (
    <div className="flex justify-center items-center mt-6">
   <div className="w-fit flex p-4 rounded-md flex-col border border-gray-400 justify-center items-center">
+    <p>solana faucet</p>
     <input
       className="border border-gray-300 rounded-md px-3 py-2 mt-6 focus:outline-none focus:ring-2 focus:ring-purple-500"
       id="publicKey"

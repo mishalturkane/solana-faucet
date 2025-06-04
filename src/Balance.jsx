@@ -14,7 +14,10 @@ export function Balance() {
     }
     
     getBalance();
-    return  <div className="w-full flex flex-col justify-center items-center">
+    return (  <div className="flex justify-center items-center mt-6">
+  <div className="w-fit flex p-4 rounded-md flex-col border border-gray-400 justify-center items-center">
         <p>SOL Balance:</p> <div id="balance"></div>
     </div>
+    </div>
+    )
 };
