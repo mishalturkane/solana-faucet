@@ -1,7 +1,6 @@
 import { ed25519 } from '@noble/curves/ed25519';
 import { useWallet } from '@solana/wallet-adapter-react';
 import bs58 from 'bs58';
-import React from 'react';
 
 export function SignMessage() {
     const { publicKey, signMessage } = useWallet();
@@ -19,7 +18,8 @@ export function SignMessage() {
     };
 
     return (
-       <div className="w-full flex flex-col justify-center items-center">
+      <div className="flex justify-center items-center mt-6">
+      <div className="w-fit flex p-4 rounded-md flex-col border border-gray-400 justify-center items-center">
           <input
   className="border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-purple-500"
   id="message"
@@ -33,6 +33,7 @@ export function SignMessage() {
       >
        sign message
       </button>
+        </div>
         </div>
     );
 };
