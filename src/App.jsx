@@ -17,6 +17,7 @@ import { SignMessage } from './SignMessage';
 import { Transaction } from './Transaction';
 // Default styles that can be overridden by your app
 import '@solana/wallet-adapter-react-ui/styles.css';
+import Navbar from './Navbar';
 
 function App() {
 
@@ -27,8 +28,8 @@ function App() {
                 <WalletModalProvider>
                   
                     <div>
-                    <WalletMultiButton /><br />
-                    <WalletDisconnectButton />
+                      <Navbar/>
+                
                     
                       <Airdrop>
 

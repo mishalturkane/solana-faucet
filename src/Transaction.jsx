@@ -42,7 +42,7 @@ export function Transaction() {
     };
 
     return (
-        <div>
+        <div className="w-full flex flex-col justify-center items-center">
             <h1>Transaction History</h1>
             {loading ? (
                 <p>Loading...</p>

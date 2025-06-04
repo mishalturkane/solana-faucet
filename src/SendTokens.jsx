@@ -20,9 +20,24 @@ export function SendTokens() {
         alert("Sent " + amount + " SOL to " + to);
     }
 
-    return <div>
-        <input id="to" type="text" placeholder="To" />
-        <input id="amount" type="text" placeholder="Amount" />
-        <button onClick={sendTokens}>Send</button>
+    return  <div className="w-full flex flex-col justify-center items-center">
+       <input
+        className="border border-gray-300 rounded-md px-3 py-2 mt-6 focus:outline-none focus:ring-2 focus:ring-purple-500"
+        id="to"
+        type="text"
+        placeholder="to"
+      />
+       <input
+        className="border border-gray-300 rounded-md px-3 py-2 mt-6 focus:outline-none focus:ring-2 focus:ring-purple-500"
+        id="publicKey"
+        type="text"
+        placeholder="Amount"
+      />
+        <button
+        className="bg-black py-2 px-3 mt-4 hover:cursor-pointer text-white rounded-md "
+        onClick={sendTokens}
+      >
+        send Token
+      </button>
     </div>
 }

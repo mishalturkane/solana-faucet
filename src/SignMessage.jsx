@@ -19,11 +19,20 @@ export function SignMessage() {
     };
 
     return (
-        <div>
-            <input id="message" type="text" placeholder="Message" />
-            <button onClick={onClick}>
-                Sign Message
-            </button>
+       <div className="w-full flex flex-col justify-center items-center">
+          <input
+  className="border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-purple-500"
+  id="message"
+  type="text"
+  placeholder="message"
+/>
+
+            <button
+        className="bg-black py-2 px-3 mt-4 hover:cursor-pointer text-white rounded-md "
+        onClick={onClick}
+      >
+       sign message
+      </button>
         </div>
     );
 };
