@@ -20,9 +20,10 @@ function App() {
     <ConnectionProvider endpoint={"https://api.devnet.solana.com"}>
             <WalletProvider wallets={[]} autoConnect>
                 <WalletModalProvider>
-                  
-                    <div>
-                      <Navbar/>
+                  <Navbar/>
+                    <div className='bg-red-300 min-h-screen'>
+                     <div className='bg-red-300 min-h-screen items-center justify-center  gap-6 flex'>
+                       
                 
                     
                       <Airdrop>
@@ -31,6 +32,8 @@ function App() {
                       <Balance></Balance>
                       <SendTokens></SendTokens>
                       <SignMessage></SignMessage>
+                     
+                     </div>
                       <Transaction />
                     </div>
                 </WalletModalProvider>
